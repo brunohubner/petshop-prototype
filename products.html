@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/products.css">
     <title>Bruno Hubner - PetShop</title>
 </head>
 <body>
     <div class="app">
         <header class="header">
             <a href="/"><h1>PetShop App</h1></a>
-            <h2>... Home</h2>
+            <h2>... Produtos</h2>
         </header>
         <main class="main">
             <aside class="menu">
                 <nav>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/products.html">Produtos</a></li>
+                        <li><a class="active-menu" href="/products.html">Produtos</a></li>
                         <li><a href="/purchase.html">Compras</a></li>
                         <li><a href="/sales.html">Vendas</a></li>
                         <li><a href="">Serviços</a></li>
@@ -28,7 +29,89 @@
                 </nav>
             </aside>
             <section class="content">
-                <p>Products</p>
+                <h2>Controle de Produtos</h2>
+                <hr/>
+                <form class="form">
+                    <div class="inputs">
+                        <input type="text" placeholder="Código do Produto">
+                        <input type="text" placeholder="Nome do Produto">
+                        <input type="number" placeholder="Quantidade em Estoque">
+                    </div>
+                    <div class="inputs">
+                        <input type="text" placeholder="Código de Barras">
+                        <input type="number" placeholder="Valor de Custo">
+                        <input type="number" placeholder="Valor de Venda">
+                    </div>
+                    <div class="selects">
+                        <select>
+                            <option selected>Tipo de animais</option>
+                            <option>Cães</option>
+                            <option>Gatos</option>
+                            <option>Pássaros</option>
+                            <option>Hamsters</option>
+                            <option>Coelhos</option>
+                        </select>
+                        <select>
+                            <option selected>Tipo de produtos</option>
+                            <option>Ração</option>
+                            <option>Remédios</option>
+                            <option>Acessórios</option>
+                            <option>Brinquedos</option>
+                            <option>Segurança</option>
+                        </select>
+                        <select>
+                            <option selected>Subtipos de produtos</option>
+                            <option>Shampoo</option>
+                            <option>Coleirass</option>
+                            <option>Gaiolas</option>
+                            <option>Bolinhas</option>
+                            <option>Petiscos</option>
+                        </select>
+                    </div>
+                    <hr/>
+                    <div class="buttons">
+                        <button>Novo</button>
+                        <button>Editar</button>
+                        <button>Salvar</button>
+                        <button>Cancelar</button>
+                        <button>Excluir</button>
+                    </div>
+                </form>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="codigo">Código</th>
+                            <th class="nome">Nome</th>
+                            <th class="tipo">Tipo</th>
+                            <th class="quantidade">Quantidade</th>
+                            <th class="preco">Preço (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>000159</td>
+                            <td>Ração pra gato</td>
+                            <td>45</td>
+                            <td>Gatos</td>
+                            <td>R$ 29,99</td>
+                        </tr>
+                        <tr>
+                            <td>000159</td>
+                            <td>Ração pra gato</td>
+                            <td>45</td>
+                            <td>Gatos</td>
+                            <td>R$ 29,99</td>
+                        </tr>
+                        <tr>
+                            <td>000159</td>
+                            <td>Ração pra gato</td>
+                            <td>45</td>
+                            <td>Gatos</td>
+                            <td>R$ 29,99</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
         <footer class="footer">

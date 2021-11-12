@@ -1,0 +1,58 @@
+.form {
+    margin-top: 10px;
+}
+
+.form div {
+    margin-bottom: 20px;
+}
+
+.form .inputs {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    gap: 20px;
+}
+
+.form .selects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.form .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.table {
+    margin-top: 20px;
+    background-color: #eee;
+    width: 100%;
+}
+
+.table, thead, tbody, tr, th, td {
+    border: 1px solid #0008;
+    border-collapse: collapse;
+}
+
+.table th, td {
+    text-align: start;
+    padding: 8px 0 8px 10px;
+}
+
+.table .codigo {
+    width: 100px;
+}
+
+.table .tipo {
+    width: 250px;
+}
+
+.table .quantidade {
+    width: 150px;
+}
+
+.table .preco {
+    width: 150px;
+}

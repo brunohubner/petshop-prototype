@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/sales.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/table.css">
     <title>Bruno Hubner - PetShop</title>
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <a href="/"><h1>PetShop App</h1></a>
-            <h2>... Vendas/h2>
+            <div class="logo">
+                <a href="/"><h1>PetShop App</h1></a>
+                <h2>... Vendas</h2>
+            </div>
+            <div class="auth">
+                <a class="login" href="">Login</a>
+                <a class="registrar" href="">Registrar</a>
+            </div>
         </header>
         <main class="main">
             <aside class="menu">
@@ -29,7 +37,108 @@
                 </nav>
             </aside>
             <section class="content">
-                <p>Sales</p>
+                <h2>Controle de Vendas</h2>
+                <hr/>
+                <form class="form">
+                    <div class="inputs1">
+                        <input type="text" placeholder="Código do Pedido">
+                        <input type="text" placeholder="Código Cliente">
+                        <input type="text" placeholder="Nome do Cliente">
+                    </div>
+                    <div class="inputs2">
+                        <div>
+                            <input type="text" placeholder="Codigo do Produto">
+                            <input type="number" placeholder="Quantidade">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Codigo do Produto">
+                            <input type="number" placeholder="Quantidade">
+                        </div>
+                    </div>
+                    <div class="inputs3">
+                        <select>
+                            <option selected>Método de pagamento</option>
+                            <option>A vista</option>
+                            <option>12x no Cartão</option>
+                            <option>Débito</option>
+                            <option>Boleto</option>
+                            <option>Pix</option>
+                        </select>
+                        <select>
+                            <option selected>Método de Entrega</option>
+                            <option>Retirada na loja</option>
+                            <option>Entrega em domicílio</option>
+                            <option>Entrega via Correios</option>
+                            <option>Não se aplica</option>
+                        </select>
+                        <input type="text" placeholder="Cupom de Desconto">
+                        <input type="text" placeholder="Valor da compra (R$)">
+                    </div>
+                    <hr/>
+                    <div class="buttons">
+                        <button type="button">Novo Pedido</button>
+                        <button type="button">Adicionar Produto</button>
+                        <button type="button">Finalizar Compra</button>
+                        <button type="button">Calcular Desconto</button>
+                        <button type="button">Cancelar</button>
+                    </div>
+                </form>
+                <hr/>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="pedido">Código do Pedido</th>
+                            <th class="cod-cliente">Código do Cliente</th>
+                            <th class="nome-cliente">Nome do Cliente</th>
+                            <th class="valor">Valor da Compra</th>
+                            <th class="pagamento">Método de Pagamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>006985</td>
+                            <td>003696</td>
+                            <td>Ana Garcia</td>
+                            <td>R$ 159,99</td>
+                            <td>A vista</td>
+                        </tr>
+                        <tr>
+                            <td>004747</td>
+                            <td>007878</td>
+                            <td>Maria Silva</td>
+                            <td>R$ 239,99</td>
+                            <td>Pix</td>
+                        </tr>
+                        <tr>
+                            <td>006985</td>
+                            <td>003696</td>
+                            <td>Pedro Oliveira</td>
+                            <td>R$ 279,99</td>
+                            <td>Débito</td>
+                        </tr>
+                        <tr>
+                            <td>006985</td>
+                            <td>003696</td>
+                            <td>Paulo Luiz</td>
+                            <td>R$ 159,99</td>
+                            <td>A prazo</td>
+                        </tr>
+                        <tr>
+                            <td>004747</td>
+                            <td>007878</td>
+                            <td>Lucia Silva</td>
+                            <td>R$ 239,99</td>
+                            <td>Pix</td>
+                        </tr>
+                        <tr>
+                            <td>006985</td>
+                            <td>003696</td>
+                            <td>Kelen Lins</td>
+                            <td>R$ 679,99</td>
+                            <td>12x no cartão</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
         <footer class="footer">

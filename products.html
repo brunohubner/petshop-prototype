@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/table.css">
     <title>Bruno Hubner - PetShop</title>
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <a href="/"><h1>PetShop App</h1></a>
-            <h2>... Produtos</h2>
+            <div class="logo">
+                <a href="/"><h1>PetShop App</h1></a>
+                <h2>... Produtos</h2>
+            </div>
+            <div class="auth">
+                <a class="login" href="">Login</a>
+                <a class="registrar" href="">Registrar</a>
+            </div>
         </header>
         <main class="main">
             <aside class="menu">
@@ -70,11 +78,11 @@
                     </div>
                     <hr/>
                     <div class="buttons">
-                        <button>Novo</button>
-                        <button>Editar</button>
-                        <button>Salvar</button>
-                        <button>Cancelar</button>
-                        <button>Excluir</button>
+                        <button type="button">Novo</button>
+                        <button type="button">Editar</button>
+                        <button type="button">Salvar</button>
+                        <button type="button">Cancelar</button>
+                        <button type="button">Excluir</button>
                     </div>
                 </form>
                 <hr>
@@ -90,25 +98,46 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>000159</td>
-                            <td>Ração pra gato</td>
-                            <td>45</td>
+                            <td>004596</td>
+                            <td>Ração para gatos</td>
                             <td>Gatos</td>
+                            <td>85</td>
                             <td>R$ 29,99</td>
                         </tr>
                         <tr>
-                            <td>000159</td>
-                            <td>Ração pra gato</td>
-                            <td>45</td>
-                            <td>Gatos</td>
-                            <td>R$ 29,99</td>
+                            <td>007564</td>
+                            <td>Coleira de cachorro</td>
+                            <td>Cães</td>
+                            <td>14</td>
+                            <td>R$ 19,99</td>
                         </tr>
                         <tr>
-                            <td>000159</td>
-                            <td>Ração pra gato</td>
-                            <td>45</td>
-                            <td>Gatos</td>
-                            <td>R$ 29,99</td>
+                            <td>003658</td>
+                            <td>Ração para coelhos</td>
+                            <td>Coelhos</td>
+                            <td>18</td>
+                            <td>R$ 24,99</td>
+                        </tr>
+                        <tr>
+                            <td>004596</td>
+                            <td>Ração para Pássaros</td>
+                            <td>Pássaros</td>
+                            <td>32</td>
+                            <td>R$ 31,99</td>
+                        </tr>
+                        <tr>
+                            <td>007564</td>
+                            <td>Coleira de Gatos</td>
+                            <td>Cães</td>
+                            <td>56</td>
+                            <td>R$ 23,99</td>
+                        </tr>
+                        <tr>
+                            <td>003658</td>
+                            <td>Ração para Hamster</td>
+                            <td>Hamster</td>
+                            <td>21</td>
+                            <td>R$ 56,99</td>
                         </tr>
                     </tbody>
                 </table>

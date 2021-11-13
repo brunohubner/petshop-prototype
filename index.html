@@ -11,8 +11,14 @@
 <body>
     <div class="app">
         <header class="header">
-            <a href="/"><h1>PetShop App</h1></a>
-            <h2>... Home</h2>
+            <div class="logo">
+                <a href="/"><h1>PetShop App</h1></a>
+                <h2>... Home</h2>
+            </div>
+            <div class="auth">
+                <a class="login" href="">Login</a>
+                <a class="registrar" href="">Registrar</a>
+            </div>
         </header>
         <main class="main">
             <aside class="menu">
@@ -29,17 +35,46 @@
                 </nav>
             </aside>
             <section class="content">
-                <h3>Bem-vindo!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Libero debitis repudiandae, repellendus aperiam tempora 
-                    distinctio aut maiores mollitia eaque harum laborum 
-                    doloremque itaque sapiente magnam quas recusandae sed porro ab!
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Libero debitis repudiandae, repellendus aperiam tempora 
-                    distinctio aut maiores mollitia eaque harum laborum 
-                    doloremque itaque sapiente magnam quas recusandae sed porro ab!
-                </p>
+                <div class="container">
+                    <div class="text">
+                        <h2>Bem-vindo!</h2>
+                        <hr><br/>
+                        <p>
+                            Com o PetShopApp você pode gerenciar seu PetShop de maneira facil e simples.
+                            Ele conta com ferramntas mais modernas para a gerencia de estoque e finanças. 
+                            Vale resaltar que esse sistema é apenas um protótipo, e ainda não está 
+                            integrado a nenhum serviço na nuvem.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Libero debitis repudiandae, repellendus aperiam tempora 
+                            distinctio aut maiores mollitia eaque harum laborum 
+                            doloremque itaque sapiente magnam quas recusandae sed porro ab!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Libero debitis repudiandae, repellendus aperiam tempora 
+                            distinctio aut maiores mollitia eaque harum laborum 
+                            doloremque itaque sapiente magnam quas recusandae sed porro ab!
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Estatísticas</h2>
+                        <hr><br/>
+                        <div class="widgets">
+                            <div class="widget">
+                                <span>Total de Vendas</span>
+                                <strong>R$ 14.456,78</strong>
+                            </div>
+                            <div class="widget">
+                                <span>Pendentes</span>
+                                <strong>R$ 5.758,23</strong>
+                            </div>
+                            <div class="widget">
+                                <span>Lucro Mensal</span>
+                                <strong>R$ 8.754,62</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer">

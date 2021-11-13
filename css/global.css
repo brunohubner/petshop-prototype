@@ -24,14 +24,47 @@ html, body {
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 0 0 20px #0008;
     z-index: 10;
+}
+
+.header .logo a {
+    margin: 0 20px;
+}
+
+.header div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.header .auth {
+    padding-right: 50px;
+}
+
+.header .login {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.header .login:hover {
+    background-color: #444;
+}
+
+.header .registrar {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+
+.header .registrar:hover {
+    background-color: #444;
 }
 
 .header a {
     text-decoration: none;
     color: #fff;
-    margin: 0 20px;
 }
 
 .main {
@@ -43,7 +76,7 @@ html, body {
 
 .menu {
     height: 100%;
-    width: 250px;
+    width: 205px;
     background-color: #333;
     box-shadow: 0 0 20px #0008;
     z-index: 5;
@@ -104,26 +137,4 @@ html, body {
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-input, select {
-    padding: 5px;
-    border: 1px solid #0006;
-    font-size: 1.1rem;
-    background-color: #fff;
-    outline: 0;
-}
-
-button {
-    padding: 3px 20px;
-    border: 0;
-    border: 1px solid #0006;
-    font-size: 1rem;
-    background-color: #eee;
-    outline: 0;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ddd;
 }

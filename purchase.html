@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/purchase.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/table.css">
     <title>Bruno Hubner - PetShop</title>
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <a href="/"><h1>PetShop App</h1></a>
-            <h2>... Compras</h2>
+            <div class="logo">
+                <a href="/"><h1>PetShop App</h1></a>
+                <h2>... Compras</h2>
+            </div>
+            <div class="auth">
+                <a class="login" href="">Login</a>
+                <a class="registrar" href="">Registrar</a>
+            </div>
         </header>
         <main class="main">
             <aside class="menu">
@@ -29,7 +37,108 @@
                 </nav>
             </aside>
             <section class="content">
-                <p>Purchase</p>
+                <h2>Controle de Compras</h2>
+                <hr/>
+                <form class="form">
+                    <div class="inputs1">
+                        <input type="text" placeholder="Código do Pedido">
+                        <input type="text" placeholder="Código Fornecedor">
+                        <input type="text" placeholder="Nome do Fornecedor">
+                    </div>
+                    <div class="inputs2">
+                        <div>
+                            <input type="text" placeholder="Codigo do Produto">
+                            <input type="number" placeholder="Quantidade">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Codigo do Produto">
+                            <input type="number" placeholder="Quantidade">
+                        </div>
+                    </div>
+                    <div class="inputs3">
+                        <select>
+                            <option selected>Método de pagamento</option>
+                            <option>A vista</option>
+                            <option>12x no Cartão</option>
+                            <option>Débito</option>
+                            <option>Boleto</option>
+                            <option>Pix</option>
+                        </select>
+                        <select>
+                            <option selected>Local de Entrega</option>
+                            <option>Matriz</option>
+                            <option>Filial 1</option>
+                            <option>Filial 2</option>
+                            <option>Filial 3</option>
+                        </select>
+                        <input type="text" placeholder="Responsável pela compra">
+                        <input type="text" placeholder="Valor da compra (R$)">
+                    </div>
+                    <hr/>
+                    <div class="buttons">
+                        <button type="button">Novo Compra</button>
+                        <button type="button">Solicitar Produto</button>
+                        <button type="button">Solicitar Compra</button>
+                        <button type="button">Calcular Imposto</button>
+                        <button type="button">Cancelar</button>
+                    </div>
+                </form>
+                <hr/>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="pedido">Código da Compra</th>
+                            <th class="cod-cliente">Código do Fornecedor</th>
+                            <th class="nome-cliente">Nome do Fornecedor</th>
+                            <th class="valor">Valor da Compra</th>
+                            <th class="pagamento">Método de Pagamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>789564</td>
+                            <td>455685</td>
+                            <td>Pet Equipamentos LTDA</td>
+                            <td>R$ 4899,99</td>
+                            <td>Boleto</td>
+                        </tr>
+                        <tr>
+                            <td>154689</td>
+                            <td>567848</td>
+                            <td>Rações & Cia LTDA</td>
+                            <td>R$ 6739,99</td>
+                            <td>Boleto</td>
+                        </tr>
+                        <tr>
+                            <td>418596</td>
+                            <td>568947</td>
+                            <td>Pet Brinquedos LTDA</td>
+                            <td>R$ 3279,99</td>
+                            <td>Boleto</td>
+                        </tr>
+                        <tr>
+                            <td>789564</td>
+                            <td>455685</td>
+                            <td>Armazém São José LTDA</td>
+                            <td>R$ 3399,99</td>
+                            <td>Boleto</td>
+                        </tr>
+                        <tr>
+                            <td>154689</td>
+                            <td>567848</td>
+                            <td>FarmaPets & Cia LTDA</td>
+                            <td>R$ 5739,99</td>
+                            <td>Boleto</td>
+                        </tr>
+                        <tr>
+                            <td>418596</td>
+                            <td>568947</td>
+                            <td>Animal Toys LTDA</td>
+                            <td>R$ 6279,99</td>
+                            <td>Boleto</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
         <footer class="footer">

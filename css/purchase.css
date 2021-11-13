@@ -1,0 +1,54 @@
+.form {
+    margin-top: 10px;
+}
+
+.form > div {
+    margin-bottom: 20px;
+}
+
+.form .inputs1 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 3fr 3fr 6fr;
+}
+
+.form .inputs2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form .inputs2 div {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form .inputs3 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+.form .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.table .pedido {
+    width: 15%;
+}
+
+.table .cod-cliente {
+    width: 15%;
+}
+
+.table .valor {
+    width: 15%;
+}
+
+.table .pagamento {
+    width: 20%;
+}
